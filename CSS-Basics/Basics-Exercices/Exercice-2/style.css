@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aClass {
+    background-color: rgb(255, 188, 203);
+}
+
+.butCooler {
+    font-size: 24px;
+}
+
+#anId {
+    font-size: 32px;
+    color: blue;
+}
+
+#anotherId {
+    background-color: rgb(192, 255, 129);
+    font-size: 24px;
+    font-weight: bold;
+}
