@@ -1,0 +1,54 @@
+body {
+    background-color: #E2AC7F;
+}
+
+@font-face {
+    font-family: grand9k;
+    src: url(fonts/grand9k_pixel/Grand9K\ Pixel.ttf);
+}
+
+#wrap {
+    background-color: #F5F5DC;
+    border: thick dotted black;
+    margin: 0 20%;
+    font-family: grand9k;}
+
+h1 {
+    text-align: center;
+    border-bottom: thick dotted black;
+    font-family: fantasy;
+    font-style: italic;
+    margin: 0;
+    font-weight: bolder;
+}
+
+#wrap p:first-of-type {
+    margin: 20px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    font-style: italic;
+}
+
+li::first-letter {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    margin: 0 0 10px 0;
+}
+
+a:link {
+    text-decoration: none;
+}
