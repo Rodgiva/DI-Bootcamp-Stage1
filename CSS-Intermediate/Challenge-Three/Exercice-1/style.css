@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin: 10px;
+}
+
+header {
+    width: 100%;
+    border: thin solid black;
+}
+
+#page {
+    padding: 20px;
+}
+
+#wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav {
+    width: 20%;
+}
+
+#content {
+    width: 80%;
+}
+
+.nav-element {
+    border: thin solid black;
+    background-color: #EA9999;
+    height: 50px;
+    margin: 0 20px 20px 0;
+}
+
+.content-element {
+    border: thin solid black;
+    background-color: #9FC5F8;
+    height: 50px;
+    margin: 0 0 20px 0;
+}
+
+footer {
+    border: thin solid black;
+    background-color: #FFE599;
+    height: 50px;
+    margin: 0 20px 20px 0;
+    align-self: flex-end;
+    width: 100%;
+}
