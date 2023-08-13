@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: celtic2;
+    background-color: rgb(80, 80, 80);
 }
 
 @font-face {
@@ -22,16 +23,7 @@ body {
     src: url(./src/Fonts/celtica/Celtica-Book.ttf);
 }
 
-header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: celtic;
-    border-bottom: thin solid var(--yellow);
-}
-
-p, h1, h2, h3, h4, h5, h6 {
+p{
     color: white;
 }
 
@@ -45,6 +37,17 @@ a {
 
 p {
     margin: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: celtic;
+    position: fixed;
+    height: 60px;
+    z-index: 1;
 }
 
 header > a {
@@ -62,6 +65,11 @@ header > a:hover {
 
 header > a:active {
     background-color: rgb(79, 126, 79);
+}
+
+main {
+    position: relative;
+    top: 60px;
 }
 
 #adrian-presentation {
@@ -82,14 +90,18 @@ header > a:active {
     margin-left: 50px;
     animation-name: emergence;
     animation-duration: 2s;
+    color: white;
 }
 
 #adrian-presentation > div > h1 {
     font-size: 72px;
 }
 
-#biography {
+main > div {
     background-color: rgb(45, 45, 45);
+}
+
+#biography {
     border: 30px solid transparent;
     padding: 15px 15px 0 15px;
     border-image: url(./src/img/border-knot.png) 150 round;
@@ -114,4 +126,31 @@ header > a:active {
 #biography > h2 {
     color: var(--yellow);
     margin-left: 4%;
+}
+
+#discography > h1 {
+    color: var(--yellow);
+    text-align: center;
+    font-size: 48px;
+    padding: 20px 0;
+    border-bottom: thin solid var(--yellow);
+    width: 50%;
+    margin: auto;
+}
+
+audio {
+    position: fixed;
+    z-index: 1;
+    border-radius: 0px;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.6;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgba(0, 0, 0, 0.77);
+}
+
+audio::-webkit-media-controls-play-button {
+    
 }
