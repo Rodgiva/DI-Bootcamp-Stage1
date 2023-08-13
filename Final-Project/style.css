@@ -23,7 +23,12 @@ body {
     src: url(./src/Fonts/celtica/Celtica-Book.ttf);
 }
 
-p{
+ul,
+li {
+    list-style: none;
+}
+
+p {
     color: white;
 }
 
@@ -50,7 +55,7 @@ header {
     z-index: 1;
 }
 
-header > a {
+header>a {
     color: var(--yellow);
     font-size: 32px;
     width: 100%;
@@ -59,11 +64,11 @@ header > a {
     padding: 10px 0;
 }
 
-header > a:hover {
+header>a:hover {
     background-color: rgb(0, 67, 0);
 }
 
-header > a:active {
+header>a:active {
     background-color: rgb(79, 126, 79);
 }
 
@@ -80,11 +85,18 @@ main {
 }
 
 @keyframes emergence {
-    0% {opacity: 0; left: -200px;}
-    100% {opacity: 1; left: 0;}
+    0% {
+        opacity: 0;
+        left: -200px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
 }
 
-#adrian-presentation > div {
+#adrian-presentation>div {
     position: relative;
     top: 70%;
     margin-left: 50px;
@@ -93,11 +105,11 @@ main {
     color: white;
 }
 
-#adrian-presentation > div > h1 {
+#adrian-presentation>div>h1 {
     font-size: 72px;
 }
 
-main > div {
+main>div {
     background-color: rgb(45, 45, 45);
 }
 
@@ -107,7 +119,7 @@ main > div {
     border-image: url(./src/img/border-knot.png) 150 round;
 }
 
-#biography > h1 {
+#biography>h1 {
     color: var(--yellow);
     text-align: center;
     font-size: 48px;
@@ -117,18 +129,18 @@ main > div {
     margin: auto;
 }
 
-#biography > p {
+#biography>p {
     font-size: 18px;
     text-align: justify;
     margin: 2%;
 }
 
-#biography > h2 {
+#biography>h2 {
     color: var(--yellow);
     margin-left: 4%;
 }
 
-#discography > h1 {
+#discography>h1 {
     color: var(--yellow);
     text-align: center;
     font-size: 48px;
@@ -138,6 +150,51 @@ main > div {
     margin: auto;
 }
 
+#discography>ul {
+    margin-left: 40%;
+}
+
+#discography>ul>li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: green;
+    border: thick solid var(--yellow);
+    border-radius: 50%;
+    position: absolute;
+    left: -17px;
+    top: 0px;
+}
+
+#discography>ul>li {
+    padding: 0;
+    padding-bottom: 1.5rem;
+    border-left: thick solid var(--yellow);
+    position: relative;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+#discography>ul>li>h2 {
+    color: var(--yellow);
+    margin-left: 5%;
+    margin: 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links>a {
+    margin: 20px;
+    color: white;
+}
+
+.links>a:hover {
+    color: rgb(128, 128, 128);
+}
+
 audio {
     position: fixed;
     z-index: 1;
@@ -145,12 +202,4 @@ audio {
     bottom: 0;
     width: 100%;
     opacity: 0.6;
-}
-
-audio::-webkit-media-controls-panel {
-    background-color: rgba(0, 0, 0, 0.77);
-}
-
-audio::-webkit-media-controls-play-button {
-    
 }
