@@ -12,13 +12,21 @@ body {
     src: url(./src/Fonts/celtic_garamond_2nd/CELTG___.TTF);
 }
 
+@font-face {
+    font-family: celtic3;
+    src: url(./src/Fonts/celtica/Celtica-Book.ttf);
+}
+
 header {
     width: 100%;
-    /* border: thin solid black; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-family: celtic;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    color: white;
 }
 
 p, h1 {
@@ -32,7 +40,6 @@ a {
 header > a {
     color:rgb(255, 196, 0);
     font-size: 32px;
-    /* border: thin solid black; */
     width: 100%;
     text-align: center;
     background-color: green;
@@ -60,7 +67,6 @@ header > a:active {
 }
 
 #adrian-presentation {
-    color: white;
     font-family: celtic2;
 }
 
@@ -74,4 +80,19 @@ header > a:active {
 
 #adrian-presentation > div > h1 {
     font-size: 72px;
+}
+
+#biography {
+    background-color: rgb(39, 43, 44);
+    border: 30px solid transparent;
+    padding: 15px;
+    border-image: url(./src/border-knot.png) 100 repeat;
+}
+
+#biography > h1 {
+    font-family: celtic2;
+    color:rgb(255, 196, 0);
+    text-align: center;
+    font-size: 48px;
+    padding: 20px 0;
 }
