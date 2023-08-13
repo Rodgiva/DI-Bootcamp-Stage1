@@ -1,5 +1,10 @@
+:root {
+    --yellow: rgb(255, 196, 0);
+}
+
 body {
     margin: 0;
+    font-family: celtic2;
 }
 
 @font-face {
@@ -23,13 +28,14 @@ header {
     flex-direction: row;
     justify-content: space-around;
     font-family: celtic;
+    border-bottom: thin solid var(--yellow);
 }
 
 p, h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
-p, h1 {
+h1 {
     margin: 0;
 }
 
@@ -37,8 +43,12 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin: 20px;
+}
+
 header > a {
-    color:rgb(255, 196, 0);
+    color: var(--yellow);
     font-size: 32px;
     width: 100%;
     text-align: center;
@@ -66,10 +76,6 @@ header > a:active {
     100% {opacity: 1; left: 0;}
 }
 
-#adrian-presentation {
-    font-family: celtic2;
-}
-
 #adrian-presentation > div {
     position: relative;
     top: 70%;
@@ -83,16 +89,29 @@ header > a:active {
 }
 
 #biography {
-    background-color: rgb(39, 43, 44);
+    background-color: rgb(45, 45, 45);
     border: 30px solid transparent;
-    padding: 15px;
-    border-image: url(./src/border-knot.png) 100 repeat;
+    padding: 15px 15px 0 15px;
+    border-image: url(./src/img/border-knot.png) 150 round;
 }
 
 #biography > h1 {
-    font-family: celtic2;
-    color:rgb(255, 196, 0);
+    color: var(--yellow);
     text-align: center;
     font-size: 48px;
-    padding: 20px 0;
+    padding: 0 0 20px 0;
+    border-bottom: thin solid var(--yellow);
+    width: 50%;
+    margin: auto;
+}
+
+#biography > p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 2%;
+}
+
+#biography > h2 {
+    color: var(--yellow);
+    margin-left: 4%;
 }
