@@ -1,11 +1,12 @@
 :root {
     --yellow: rgb(255, 196, 0);
+    --grey1: rgb(80, 80, 80);
 }
 
 body {
     margin: 0;
     font-family: celtic2;
-    background-color: rgb(80, 80, 80);
+    background-color: var(--grey1)
 }
 
 @font-face {
@@ -21,6 +22,19 @@ body {
 @font-face {
     font-family: celtic3;
     src: url(./src/Fonts/celtica/Celtica-Book.ttf);
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: rgb(0, 80, 0);
+    border-left: thin solid var(--yellow);
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: url(./src/img/scrollbar2.png);
+    background-position: center, center 0px;
+    /* background-repeat: repeat-y; */
+    background-size: contain;
 }
 
 ul,
@@ -53,6 +67,7 @@ header {
     position: fixed;
     height: 60px;
     z-index: 1;
+    border-bottom: thin solid var(--yellow);
 }
 
 header>a {
@@ -196,8 +211,6 @@ main>div {
 .links>a:hover {
     color: rgb(128, 128, 128);
 }
-
-.music {}
 
 audio {
     position: fixed;
