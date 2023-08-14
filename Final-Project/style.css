@@ -123,7 +123,7 @@ main>div {
     color: var(--yellow);
     text-align: center;
     font-size: 48px;
-    padding: 0 0 20px 0;
+    padding: 30px 0 20px 0;
     border-bottom: thin solid var(--yellow);
     width: 50%;
     margin: auto;
@@ -138,13 +138,14 @@ main>div {
 #biography>h2 {
     color: var(--yellow);
     margin-left: 4%;
+    margin-bottom: 0;
 }
 
 #discography>h1 {
     color: var(--yellow);
     text-align: center;
     font-size: 48px;
-    padding: 20px 0;
+    padding: 70px 0 20px 0;
     border-bottom: thin solid var(--yellow);
     width: 50%;
     margin: auto;
@@ -162,13 +163,14 @@ main>div {
     border: thick solid var(--yellow);
     border-radius: 50%;
     position: absolute;
-    left: -17px;
+    left: -18px;
     top: 0px;
 }
 
 #discography>ul>li {
     padding: 0;
     padding-bottom: 1.5rem;
+    width: 50%;
     border-left: thick solid var(--yellow);
     position: relative;
     padding-left: 20px;
