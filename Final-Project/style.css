@@ -231,10 +231,10 @@ audio {
     bottom: 0;
     right: 0;
     width: 5%;
-    height: 55px;
+    /* height: 55px;
     border-radius: 50px;
-    opacity: 0.6;
     font-size: 24px;
+    opacity: 0.6; */
 }
 
 footer {

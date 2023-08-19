@@ -180,22 +180,7 @@
 
     </footer>
 </body>
-<script>
-    let audio = document.getElementsByClassName("music");
-    let btn = document.getElementsByClassName("remove-btn");
 
-    audio[0].volume = 0.3;
-
-    btn[0].addEventListener("click", remove);
-    function remove() {
-        console.log(audio[0].style);
-        if (audio[0].style.visibility == 'hidden') {
-            audio[0].style.visibility = 'visible';
-        }
-        else if (audio[0].style.visibility == 'visible' || audio[0].style.visibility == "") {
-            audio[0].style.visibility = 'hidden';
-        }
-    }
-</script>
+<script src="./script.js"></script> 
 
 </html>
